@@ -1,0 +1,17 @@
+{
+  "name": "verdict",
+  "version": "1.4.2",
+  "description": "Compute quality functions of 2 and 3-dimensional regions.",
+  "homepage": "https://github.com/sandialabs/verdict",
+  "license": null,
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

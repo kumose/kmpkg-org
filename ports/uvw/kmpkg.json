@@ -1,0 +1,18 @@
+{
+  "name": "uvw",
+  "version": "3.4.0",
+  "description": "A compilable static library, event based, tiny and easy to use libuv wrapper in modern C++.",
+  "homepage": "https://github.com/skypjack/uvw",
+  "license": "MIT",
+  "dependencies": [
+    "libuv",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

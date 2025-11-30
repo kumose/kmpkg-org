@@ -1,0 +1,19 @@
+{
+  "name": "knncolle-hnsw",
+  "version": "0.2.1",
+  "description": "knncolle bindings for HNSW search ",
+  "homepage": "https://github.com/knncolle/knncolle_hnsw",
+  "license": "MIT",
+  "dependencies": [
+    "hnswlib",
+    "knncolle",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

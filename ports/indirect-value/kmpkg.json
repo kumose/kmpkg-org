@@ -1,0 +1,16 @@
+{
+  "name": "indirect-value",
+  "version-date": "2023-06-01",
+  "description": "An indirect value-type for C++",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

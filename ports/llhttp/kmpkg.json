@@ -1,0 +1,17 @@
+{
+  "name": "llhttp",
+  "version": "9.2.1",
+  "description": "Port of http_parser to llparse.",
+  "homepage": "https://github.com/nodejs/llhttp",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

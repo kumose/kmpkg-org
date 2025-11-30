@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/kmpkg-tool/main/docs/kmpkg.schema.json",
+  "name": "staticjson",
+  "version": "1.0.0",
+  "description": "Fast, direct and static typed parsing of JSON with C++",
+  "homepage": "https://github.com/netheril96/StaticJSON",
+  "license": "MIT",
+  "dependencies": [
+    "rapidjson",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

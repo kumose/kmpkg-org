@@ -1,0 +1,15 @@
+{
+  "name": "argagg",
+  "version": "0.4.7",
+  "description": "A simple C++11 command line argument parser",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "distorm",
+  "version-string": "3.5.2b",
+  "description": "Powerful Disassembler Library For x86/AMD64",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

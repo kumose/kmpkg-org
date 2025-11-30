@@ -1,0 +1,38 @@
+kmpkg_from_github(
+    OUT_SOURCE_PATH SOURCE_PATH
+    REPO LLNL/units
+    REF "v${VERSION}"
+    SHA512 4b847cbf0d09ad39185058f95286dd4db95a123b399af707440cc22b5d8d7efd67741e610170e14aa744935a9ec9b58aa782ffd32fbf7366df473e40f2c318cd
+    HEAD_REF main
+)
+
+kmpkg_check_features(
+    OUT_FEATURE_OPTIONS FEATURE_OPTIONS
+    FEATURES
+        tools UNITS_BUILD_CONVERTER_APP
+)
+
+kmpkg_cmake_configure(
+    SOURCE_PATH "${SOURCE_PATH}"
+    OPTIONS
+        ${FEATURE_OPTIONS}
+        -DUNITS_CMAKE_PROJECT_NAME=LLNL-UNITS
+        -DUNITS_ENABLE_TESTS=OFF
+        -DUNITS_BUILD_FUZZ_TARGETS=OFF
+        -DLLNL-UNITS_ENABLE_ERROR_ON_WARNINGS=OFF
+        -DLLNL-UNITS_ENABLE_EXTRA_COMPILER_WARNINGS=OFF
+    OPTIONS_DEBUG
+        -DUNITS_BUILD_CONVERTER_APP=OFF
+)
+
+kmpkg_cmake_install()
+kmpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/llnl-units)
+
+if("tools" IN_LIST FEATURES)
+    kmpkg_copy_tools(TOOL_NAMES units_convert AUTO_CLEAN)
+endif()
+
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
+
+file(INSTALL "${CMAKE_CURRENT_LIST_DIR}/usage" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}")
+kmpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")

@@ -1,0 +1,26 @@
+kmpkg_from_github(
+    OUT_SOURCE_PATH SOURCE_PATH
+    REPO eranpeer/FakeIt
+    REF "${VERSION}"
+    SHA512 CA9932DF909D6C7F75AB775B6AC9695C80F1DC4A58599C789EEA279A05183E9568BB80B63EBDA5EF77EDD54D766977AB7C5BCD565FB45A61B56CB8D43E49007B
+    HEAD_REF master
+)
+
+set(KMPKG_BUILD_TYPE release) # header-only port
+
+kmpkg_cmake_configure(
+    SOURCE_PATH "${SOURCE_PATH}"
+    OPTIONS
+        -DCMAKE_INSTALL_INCLUDEDIR=include/fakeit/single_header
+        -DENABLE_TESTING=OFF
+)
+
+kmpkg_cmake_install()
+
+kmpkg_cmake_config_fixup(CONFIG_PATH lib/cmake/FakeIt)
+
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/lib")
+
+file(INSTALL "${CMAKE_CURRENT_LIST_DIR}/usage" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}")
+
+kmpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")

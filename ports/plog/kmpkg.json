@@ -1,0 +1,17 @@
+{
+  "name": "plog",
+  "version": "1.1.11",
+  "description": "Portable, simple and extensible C++ logging library.",
+  "homepage": "https://github.com/SergiusTheBest/plog",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

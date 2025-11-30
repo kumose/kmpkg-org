@@ -1,0 +1,15 @@
+{
+  "name": "minitrace",
+  "version-date": "2023-04-23",
+  "description": "Simple C/C++ library for producing JSON traces suitable for Chrome's built-in trace viewer.",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

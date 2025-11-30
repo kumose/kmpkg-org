@@ -1,0 +1,16 @@
+{
+  "name": "tweeny",
+  "version": "3.2.1",
+  "description": "A modern C++ tweening library",
+  "homepage": "https://github.com/mobius3/tweeny",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

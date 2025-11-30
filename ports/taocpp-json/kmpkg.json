@@ -1,0 +1,16 @@
+{
+  "name": "taocpp-json",
+  "version-date": "2020-09-14",
+  "port-version": 4,
+  "description": "C++ header-only JSON library",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

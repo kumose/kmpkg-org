@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/kmpkg-tool/main/docs/kmpkg.schema.json",
+  "name": "libsmb2",
+  "version": "6.2",
+  "description": "SMB2/3 Userspace Client",
+  "homepage": "https://github.com/sahlberg/libsmb2",
+  "license": "LGPL-2.1-or-later",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ],
+  "features": {
+    "krb5": {
+      "description": "SMB2/3 with krb5 support",
+      "supports": "linux | ios",
+      "dependencies": [
+        {
+          "name": "krb5",
+          "platform": "linux"
+        }
+      ]
+    }
+  }
+}

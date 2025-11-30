@@ -1,0 +1,17 @@
+{
+  "name": "xtensor-blas",
+  "version": "0.22.0",
+  "description": "BLAS extension to xtensor",
+  "homepage": "https://github.com/xtensor-stack/xtensor-blas",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    },
+    "xtensor"
+  ]
+}

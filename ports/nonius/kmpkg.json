@@ -1,0 +1,19 @@
+{
+  "name": "nonius",
+  "version-date": "2019-04-20",
+  "port-version": 4,
+  "description": "A C++ micro-benchmarking framework",
+  "dependencies": [
+    "boost-algorithm",
+    "boost-lexical-cast",
+    "boost-math",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

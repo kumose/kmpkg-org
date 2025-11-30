@@ -1,0 +1,19 @@
+{
+  "name": "pmp-library",
+  "version": "3.0.0",
+  "description": "The Polygon Mesh Processing Library",
+  "homepage": "https://github.com/pmp-library/pmp-library",
+  "license": "MIT",
+  "supports": "!xbox",
+  "dependencies": [
+    "eigen3",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

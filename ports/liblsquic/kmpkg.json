@@ -1,0 +1,25 @@
+{
+  "name": "liblsquic",
+  "version": "3.3.2",
+  "port-version": 1,
+  "description": "An implementation of the QUIC and HTTP/3 protocols.",
+  "homepage": "https://github.com/litespeedtech/lsquic",
+  "license": "MIT AND BSD-3-Clause",
+  "supports": "!x86",
+  "dependencies": [
+    "boringssl",
+    {
+      "name": "getopt",
+      "platform": "windows"
+    },
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    },
+    "zlib"
+  ]
+}

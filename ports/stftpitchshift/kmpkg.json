@@ -1,0 +1,16 @@
+{
+  "name": "stftpitchshift",
+  "version": "1.4.1",
+  "description": "STFT based multi pitch shifting with optional formant preservation.",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

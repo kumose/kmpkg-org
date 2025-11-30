@@ -1,0 +1,17 @@
+if(KMPKG_CMAKE_SYSTEM_NAME AND NOT KMPKG_CMAKE_SYSTEM_NAME STREQUAL "WindowsStore")
+    set(KMPKG_POLICY_EMPTY_PACKAGE enabled)
+    return()
+endif()
+
+kmpkg_from_github(
+    OUT_SOURCE_PATH SOURCE_PATH
+    REPO tronkko/dirent
+    REF "${VERSION}"
+    SHA512 5dc3ae63247259e209f8a93c0be9369c094e6783bd0b9df41545067e4d807da2e5339509da03cfdb1ea1c2f9642b1fad33124b7b2ec7e649442cc6e561b0a3f9
+    HEAD_REF master
+)
+file(INSTALL ${SOURCE_PATH}/include/ DESTINATION ${CURRENT_PACKAGES_DIR}/include)
+kmpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE")
+kmpkg_copy_pdbs()
+
+set(KMPKG_POLICY_ALLOW_RESTRICTED_HEADERS enabled)

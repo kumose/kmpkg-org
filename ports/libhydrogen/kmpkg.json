@@ -1,0 +1,17 @@
+{
+  "name": "libhydrogen",
+  "version-date": "2022-06-21",
+  "description": "A lightweight, secure, easy-to-use crypto library suitable for constrained environments",
+  "homepage": "https://github.com/jedisct1/libhydrogen",
+  "license": "ISC",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

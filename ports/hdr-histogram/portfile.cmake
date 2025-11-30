@@ -1,0 +1,51 @@
+if(KMPKG_TARGET_IS_WINDOWS AND NOT KMPKG_TARGET_IS_MINGW)
+    kmpkg_check_linkage(ONLY_STATIC_LIBRARY)
+endif()
+
+kmpkg_from_github(
+    OUT_SOURCE_PATH SOURCE_PATH
+    REPO HdrHistogram/HdrHistogram_c
+    REF ${VERSION}
+    SHA512 62cb07f60c817eab1e4782522934f9e6bb5495dab35747be01936aa05468a6cc4aeb70dd54632db3ebb03f0c4f42097475679d914df93e4eba8798e6b2affc60
+    HEAD_REF main
+)
+
+if("log" IN_LIST FEATURES)
+    list(APPEND FEATURE_OPTIONS "-DHDR_LOG_REQUIRED=ON")
+else()
+    list(APPEND FEATURE_OPTIONS "-DHDR_LOG_REQUIRED=DISABLED")
+endif()
+
+if(KMPKG_LIBRARY_LINKAGE STREQUAL "dynamic")
+    list(APPEND FEATURE_OPTIONS "-DHDR_HISTOGRAM_BUILD_STATIC:BOOL=OFF")
+    list(APPEND FEATURE_OPTIONS "-DHDR_HISTOGRAM_INSTALL_STATIC:BOOL=OFF")
+else()
+    list(APPEND FEATURE_OPTIONS "-DHDR_HISTOGRAM_BUILD_SHARED:BOOL=OFF")
+    list(APPEND FEATURE_OPTIONS "-DHDR_HISTOGRAM_INSTALL_SHARED:BOOL=OFF")
+endif()
+
+# Do not build tests and examples
+list(APPEND FEATURE_OPTIONS "-DHDR_HISTOGRAM_BUILD_PROGRAMS:BOOL=OFF")
+
+kmpkg_cmake_configure(
+    SOURCE_PATH "${SOURCE_PATH}"
+    OPTIONS
+        ${FEATURE_OPTIONS}
+)
+
+kmpkg_cmake_install()
+
+kmpkg_cmake_config_fixup(
+    PACKAGE_NAME hdr_histogram
+    CONFIG_PATH lib/cmake/hdr_histogram
+)
+
+kmpkg_fixup_pkgconfig()
+
+kmpkg_copy_pdbs()
+
+file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
+
+kmpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE.txt" "${SOURCE_PATH}/COPYING.txt")
+
+file(INSTALL "${CMAKE_CURRENT_LIST_DIR}/usage" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}")

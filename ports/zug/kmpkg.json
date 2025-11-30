@@ -1,0 +1,21 @@
+{
+  "name": "zug",
+  "version-date": "2024-04-26",
+  "description": "Transducers for C++",
+  "homepage": "https://sinusoid.es/zug/",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ],
+  "features": {
+    "docs": {
+      "description": "Build documentation"
+    }
+  }
+}

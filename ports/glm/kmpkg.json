@@ -1,0 +1,17 @@
+{
+  "name": "glm",
+  "version": "1.0.2",
+  "description": "OpenGL Mathematics (GLM)",
+  "homepage": "https://glm.g-truc.net",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

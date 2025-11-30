@@ -1,0 +1,17 @@
+{
+  "name": "liblinear",
+  "version": "249",
+  "description": "A Library for Large Linear Classification",
+  "homepage": "https://github.com/cjlin1/liblinear",
+  "supports": "!uwp",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

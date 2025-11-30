@@ -1,0 +1,22 @@
+{
+  "name": "nanodbc",
+  "version": "2.13.0",
+  "port-version": 8,
+  "description": "A small C++ wrapper for the native C ODBC API.",
+  "homepage": "https://github.com/nanodbc/nanodbc",
+  "supports": "!uwp",
+  "dependencies": [
+    {
+      "name": "unixodbc",
+      "platform": "!windows"
+    },
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "pe-parse",
+  "version": "2.1.1",
+  "description": "pe-parse is a principled, lightweight C/C++ PE parser",
+  "homepage": "https://github.com/trailofbits/pe-parse",
+  "supports": "!uwp",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "nss",
+  "version": "3.113.1",
+  "description": "Network Security Services from Mozilla",
+  "homepage": "https://ftp.mozilla.org/pub/security/nss/releases/",
+  "license": "MPL-2.0",
+  "supports": "!arm32 & !(arm & windows)",
+  "dependencies": [
+    "nspr",
+    {
+      "name": "sqlite3",
+      "default-features": false
+    },
+    {
+      "name": "kmpkg-cmake-get-vars",
+      "host": true,
+      "platform": "windows & !mingw"
+    },
+    {
+      "name": "kmpkg-get-python-packages",
+      "host": true
+    },
+    {
+      "name": "kmpkg-make",
+      "host": true
+    },
+    {
+      "name": "kmpkg-pkgconfig-get-modules",
+      "host": true
+    },
+    "zlib"
+  ]
+}

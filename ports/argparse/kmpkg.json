@@ -1,0 +1,17 @@
+{
+  "name": "argparse",
+  "version": "3.2",
+  "description": "Argument parser for modern C++",
+  "homepage": "https://github.com/p-ranav/argparse",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

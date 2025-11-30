@@ -1,0 +1,17 @@
+{
+  "name": "orocos-kdl",
+  "version": "1.5.1",
+  "description": "Kinematics and Dynamics Library.",
+  "homepage": "https://github.com/orocos/orocos_kinematics_dynamics",
+  "dependencies": [
+    "eigen3",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

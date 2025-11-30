@@ -1,0 +1,17 @@
+{
+  "name": "plibsys",
+  "version": "0.0.5",
+  "description": "Highly portable C system library: threads and synchronization, sockets, IPC, data structures and more.",
+  "homepage": "https://github.com/saprykin/plibsys",
+  "supports": "!uwp",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

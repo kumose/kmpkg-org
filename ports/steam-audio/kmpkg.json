@@ -1,0 +1,25 @@
+{
+  "name": "steam-audio",
+  "version": "4.7.0",
+  "description": "Valve's steam audio library",
+  "homepage": "https://github.com/ValveSoftware/steam-audio",
+  "license": "Apache-2.0",
+  "supports": "!uwp",
+  "dependencies": [
+    "flatbuffers",
+    {
+      "name": "flatbuffers",
+      "host": true
+    },
+    "libmysofa",
+    "pffft",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

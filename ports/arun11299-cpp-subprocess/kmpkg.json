@@ -1,0 +1,17 @@
+{
+  "name": "arun11299-cpp-subprocess",
+  "version": "2.5",
+  "description": "Subprocessing with modern C++ ",
+  "homepage": "https://github.com/arun11299/cpp-subprocess",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

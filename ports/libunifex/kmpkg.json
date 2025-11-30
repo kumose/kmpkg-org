@@ -1,0 +1,25 @@
+{
+  "name": "libunifex",
+  "version": "0.4.0",
+  "description": "Unified Executors",
+  "homepage": "https://github.com/facebookexperimental/libunifex",
+  "dependencies": [
+    {
+      "name": "liburing",
+      "platform": "linux"
+    },
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ],
+  "features": {
+    "coroutines": {
+      "description": "Support coroutine"
+    }
+  }
+}

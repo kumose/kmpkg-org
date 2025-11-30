@@ -1,0 +1,17 @@
+{
+  "name": "tinyply",
+  "version": "2.3.4",
+  "description": "C++11 ply 3d mesh format importer & exporter",
+  "homepage": "https://github.com/ddiakopoulos/tinyply",
+  "license": "BSD-2-Clause",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

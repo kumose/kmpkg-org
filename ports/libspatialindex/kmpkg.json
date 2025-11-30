@@ -1,0 +1,18 @@
+{
+  "name": "libspatialindex",
+  "version": "2.1.0",
+  "description": "C++ implementation of R*-tree, an MVR-tree and a TPR-tree with C API.",
+  "homepage": "https://libspatialindex.org/",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    },
+    "zlib"
+  ]
+}

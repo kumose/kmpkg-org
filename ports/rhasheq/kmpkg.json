@@ -1,0 +1,19 @@
+{
+  "name": "rhasheq",
+  "version-date": "2023-06-17",
+  "description": "Simple header-only librhash wrapper for verifying hashes from a file to a given `const char *`.",
+  "homepage": "https://github.com/offscale/rhasheq",
+  "license": "0BSD",
+  "dependencies": [
+    "c89stringutils",
+    "rhash",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

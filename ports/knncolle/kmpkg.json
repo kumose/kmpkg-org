@@ -1,0 +1,18 @@
+{
+  "name": "knncolle",
+  "version": "3.0.1",
+  "description": "Collection of KNN algorithms in C++ ",
+  "homepage": "https://github.com/knncolle/knncolle",
+  "license": "MIT",
+  "dependencies": [
+    "ltla-subpar",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

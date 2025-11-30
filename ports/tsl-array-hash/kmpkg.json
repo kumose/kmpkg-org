@@ -1,0 +1,15 @@
+{
+  "name": "tsl-array-hash",
+  "version": "0.7.2",
+  "description": "C++ implementation of a memory efficient hash map and hash set",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

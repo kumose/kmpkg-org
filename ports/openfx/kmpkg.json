@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/kmpkg-tool/main/docs/kmpkg.schema.json",
+  "name": "openfx",
+  "version": "1.4",
+  "maintainers": "Reza Alizadeh Majd <r.a.majd@gmail.com>, Behnam Binesh <BehnamBih@gmail.com>",
+  "summary": "OpenFX - An open-source plugin API for visual effects",
+  "homepage": "https://github.com/AcademySoftwareFoundation/openfx",
+  "license": "BSD-3-Clause",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "bitsery",
+  "version": "5.2.5",
+  "description": "Header only C++ binary serialization library",
+  "homepage": "https://github.com/fraillt/bitsery",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

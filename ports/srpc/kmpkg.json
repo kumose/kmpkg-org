@@ -1,0 +1,23 @@
+{
+  "name": "srpc",
+  "version-semver": "0.10.3",
+  "port-version": 1,
+  "description": "RPC based on Sogou C++ Workflow",
+  "homepage": "https://github.com/sogou/srpc",
+  "dependencies": [
+    "lz4",
+    "openssl",
+    "protobuf",
+    "snappy",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    },
+    "workflow",
+    "zlib"
+  ]
+}

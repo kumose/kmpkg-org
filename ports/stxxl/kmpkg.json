@@ -1,0 +1,17 @@
+{
+  "name": "stxxl",
+  "version-date": "2018-11-15",
+  "port-version": 9,
+  "description": "Standard Template Library for Extra Large Data Sets",
+  "supports": "!uwp",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

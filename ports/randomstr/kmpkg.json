@@ -1,0 +1,16 @@
+{
+  "name": "randomstr",
+  "version-date": "2022-02-03",
+  "description": "Simple randomstr function in a header-only C89 library",
+  "license": "0BSD",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

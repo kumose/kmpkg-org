@@ -1,0 +1,14 @@
+# import summary start #####
+operator: Kmdo
+when: 2025-12-01T07:45:01+08:00
+original.hash: 1ee2e9d2920ba96be0b02c09915dd3c6d17fb50e
+original.author: Chris Sarbora
+original.date: 2025-11-28 15:17:34 -0500
+original.message: [directfb2] add port (#48418)
+
+
+original.remote: https://github.com/microsoft/vcpkg.git
+ports.count: 2726
+ports.cost.us: 121550604
+# import summary end #####
+

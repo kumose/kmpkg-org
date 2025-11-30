@@ -1,0 +1,17 @@
+{
+  "name": "libguarded",
+  "version": "1.4.1",
+  "description": "Header-only library for multithreaded programming.",
+  "homepage": "https://github.com/copperspice/libguarded",
+  "license": "BSD-2-Clause",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

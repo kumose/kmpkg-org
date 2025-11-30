@@ -1,0 +1,17 @@
+{
+  "name": "rlottie",
+  "version-date": "2024-08-26",
+  "description": "A platform independent standalone library that plays Lottie Animation.",
+  "homepage": "https://github.com/Samsung/rlottie",
+  "dependencies": [
+    "rapidjson",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

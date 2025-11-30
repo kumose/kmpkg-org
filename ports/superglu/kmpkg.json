@@ -1,0 +1,19 @@
+{
+  "name": "superglu",
+  "version": "1.3.3",
+  "description": "SGI GLU with miscellaneous fixes",
+  "homepage": "https://github.com/coin3d/superglu",
+  "license": "SGI-B-1.1",
+  "supports": "windows & !uwp",
+  "dependencies": [
+    "opengl-registry",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

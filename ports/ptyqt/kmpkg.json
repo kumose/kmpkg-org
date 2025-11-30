@@ -1,0 +1,21 @@
+{
+  "name": "ptyqt",
+  "version": "0.7.1",
+  "description": "PtyQt - C++ library for work with PseudoTerminals",
+  "supports": "!uwp",
+  "dependencies": [
+    "qt5-base",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    },
+    {
+      "name": "winpty",
+      "platform": "windows"
+    }
+  ]
+}

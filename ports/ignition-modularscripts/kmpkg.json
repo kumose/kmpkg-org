@@ -1,0 +1,17 @@
+{
+  "name": "ignition-modularscripts",
+  "version-date": "2025-02-27",
+  "description": "Kmpkg helpers to package ignition libraries",
+  "license": null,
+  "supports": "native",
+  "dependencies": [
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

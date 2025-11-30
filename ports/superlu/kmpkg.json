@@ -1,0 +1,18 @@
+{
+  "name": "superlu",
+  "version": "7.0.0",
+  "description": "Supernodal sparse direct solver.",
+  "homepage": "https://github.com/xiaoyeli/superlu",
+  "license": "BSD-3-Clause-LBNL",
+  "dependencies": [
+    "blas",
+    {
+      "name": "kmpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "kmpkg-cmake-config",
+      "host": true
+    }
+  ]
+}
